@@ -101,6 +101,61 @@ opacity: 0.7;
   background-color: #F3EBD8;
   border-radius: 20px;   
 }
+  
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(4, auto);   /* 4 rows */
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    background-color: #FFF1B5; /* default color */
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* middle column = blue */
+.card:nth-child(3n + 2) {
+    background-color: #C1DBE8; /* blue for middle column */
+}
+
+/* inner rectangles */
+.inner {
+    border-radius: 10px;
+}
+
+/* top rectangle (same for all) */
+.inner.top {
+    height: 60px;
+    background-color: #E8E2D4; /* beige or whatever */
+}
+
+/* bottom rectangle (different images) */
+.inner.bottom {
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* assign different images for bottom rectangles */
+.card:nth-child(1)  .inner.bottom { background-image: url("img1.png"); }
+.card:nth-child(2)  .inner.bottom { background-image: url("img2.png"); }
+.card:nth-child(3)  .inner.bottom { background-image: url("img3.png"); }
+.card:nth-child(4)  .inner.bottom { background-image: url("img4.png"); }
+.card:nth-child(5)  .inner.bottom { background-image: url("img5.png"); }
+.card:nth-child(6)  .inner.bottom { background-image: url("img6.png"); }
+.card:nth-child(7)  .inner.bottom { background-image: url("img7.png"); }
+.card:nth-child(8)  .inner.bottom { background-image: url("img8.png"); }
+.card:nth-child(9)  .inner.bottom { background-image: url("img9.png"); }
+.card:nth-child(10) .inner.bottom { background-image: url("img10.png"); }
+.card:nth-child(11) .inner.bottom { background-image: url("img11.png"); }
+.card:nth-child(12) .inner.bottom { background-image: url("img12.png"); }
 </style>
     
 <body>
@@ -135,7 +190,31 @@ experiments, favorites, and everything in between.
 </div>
 
 <!-- gallery section --> 
-<div class="beige-rectangle"></div>
+<div class="beige-rectangle">
+<div class="grid">
+
+    <!-- Row 1 -->
+    <div class="card"><div class="inner top"></div><div class="inner bottom"></div></div>
+    <div class="card"><div class="inner top"></div><div class="inner bottom"></div></div>
+    <div class="card"><div class="inner top"></div><div class="inner bottom"></div></div>
+
+    <!-- Row 2 -->
+    <div class="card"><div class="inner top"></div><div class="inner bottom"></div></div>
+    <div class="card"><div class="inner top"></div><div class="inner bottom"></div></div>
+    <div class="card"><div class="inner top"></div><div class="inner bottom"></div></div>
+
+    <!-- Row 3 -->
+    <div class="card"><div class="inner top"></div><div class="inner bottom"></div></div>
+    <div class="card"><div class="inner top"></div><div class="inner bottom"></div></div>
+    <div class="card"><div class="inner top"></div><div class="inner bottom"></div></div>
+
+    <!-- Row 4 -->
+    <div class="card"><div class="inner top"></div><div class="inner bottom"></div></div>
+    <div class="card"><div class="inner top"></div><div class="inner bottom"></div></div>
+    <div class="card"><div class="inner top"></div><div class="inner bottom"></div></div>
+
+  </div>
+</div>
   
   
       </div>
