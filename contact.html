@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en.CA">
+  <head>
+    <title>Crafted Kitchen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet"> 
+<style>
+  html {
+    width: 1440px;
+  }
+  
+  body {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: white;
+  font-family: Crimson Text; 
+}
+
+/* Container, Margin */
+.container {
+  width: 100%;
+  margin: 0 auto;          
+  padding: 0 20px;         
+}
+
+.nav-wrapper {
+display: flex;
+align-items: center;
+padding: 10px 0;
+}
+
+
+/* space for star logo */
+.logo-space {
+width: 150px;
+height: auto;
+margin-right: 20px;
+}
+
+
+/* Nav Bar */
+.navbar {
+background-color: #FFF1B5;
+padding: 14px 0;
+border-radius: 30px;
+flex-grow: 1;
+}
+
+
+/* evenly spaced links */
+.navbar ul {
+list-style: none;
+margin: 0;
+padding: 0 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+.navbar li a {
+text-decoration: none;
+color: black;
+font-size: 17px;
+}
+
+
+.navbar li a:hover {
+opacity: 0.7;
+}
+  
+/* split rectangle */
+.split-rectangle {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+}
+
+.col {
+  flex: 1;
+}
+
+.brown {
+  background-color: #43302E;
+}
+
+.yellow {
+  background-color: #FFF1B5;
+}
+
+/* page title */
+.contact {
+  font-family: "crimson text";
+  font-size: 220px;
+  color: #E1C1C6;
+  -webkit-text-stroke: 3px white; 
+}
+  
+/* web form rectangle */
+.blue-rectangle {
+  width: 100%;
+  max-width: 1200px;
+  height: 700px;  
+  background-color: #C1DBE8;
+  margin: 0 auto 0px;  
+  position: relative;
+
+  background-image: 
+      url('starsdoodle.png'), 
+      url('lowerbodydoodle.png'); 
+
+  background-repeat: no-repeat, no-repeat;
+
+  /* doodle 1 */
+  background-position: center, 
+  /* doodle 2 */
+                       left 380px;
+
+  background-size: 2000px, 400px;
+}
+
+.beige-rectangle {
+  width: 500px;
+  height: 350px;
+  position: absolute;
+  top: 50px;   
+  left: 50px;
+  background-color: #E8E2D4;
+  border-radius: 20px;
+  padding: 15px; 
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;  
+  justify-content: center; 
+  font-family: "bagel fat one";
+  font-size: 48px;
+  color: white;
+  text-align: center;  
+}
+  
+.form-box {
+  position: absolute;
+  top: 60px;         
+  right: 60px;        
+  width: 450px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 18px rgba(0,0,0,0.15);
+  font-family: "Crimson Text";
+}
+
+/* labels */
+.form-box label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* inputs + textarea */
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.form-box textarea {
+  height: 110px;
+  resize: none;
+}
+
+/* submit button */
+.form-box button {
+  width: 100%;
+  padding: 16px;
+  background: #2b2b2b;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  opacity: 0.85;
+}
+  
+/* Footer Section */
+.footer {
+  width: 100%;
+  max-width: 1200px;    
+  height: 500px;        
+  background-color: #FFF1B5;
+  margin: 0 auto;
+  position: relative; 
+}
+
+.footer-title {
+  position: absolute;
+  top: 50px;              
+  left: 75px;                 
+  font-size: 60px;
+  font-family: 'Croissant One'; 
+  font-weight: bold;
+  color: #43302E;     
+}
+
+.footer-image {
+  position: absolute;       
+  top: 150px;               
+  left: 75px;                  
+  width: auto;              
+  height: 250px;           
+}
+
+.footer .blue-rectangle {
+  position: absolute;
+  top: 50px;           
+  left: 750px;         
+  width: 350px;
+  height: 355px;
+  background-color: #C1DBE8;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: none;
+}
+
+.footer .blue-rectangle .title {
+  font-family: "Croissant One";
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer .blue-rectangle .link {
+  font-family: "Croissant One";
+  font-size: 32px;
+  margin: 5px 0;
+}
+
+.footer-bottom-text {
+  position: absolute;
+  bottom: 25px;
+  left: 75px;
+  font-size: 16px;
+  font-family: "Croissant One";
+  color: black;
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="container">
+
+<div class="nav-wrapper">
+<img class="logo-space" src="StarLogo.png" alt="Logo">
+
+
+<nav class="navbar">
+<ul>
+<li><a href="homepage.html">Home</a></li>
+<li><a href="about.html">About me</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+
+<!-- Split rectangle --> 
+<div class="split-rectangle">
+  <div class="col brown"></div>
+  <div class="col yellow"></div>
+  <div class="col brown"></div>
+  <div class="col yellow"></div>
+  <div class="col brown"></div>
+  <div class="col yellow"></div>
+  <div class="col brown"></div>
+  <div class="col yellow"></div>
+  <div class="col brown"></div>
+  <div class="col yellow"></div>
+  <div class="col brown"></div>
+  <!-- Page title --> 
+  <div class="contact" style="
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Crimson Text';
+    font-size: 220px;
+    color: #E1C1C6;
+  ">
+    CONTACT
+  </div>
+</div>  
+<!-- Web form rectangle -->
+<div class="blue-rectangle">
+  <div class="beige-rectangle">
+    <p>Want to know more? Let me know what your thoughts!</p>
+  </div> 
+  <div class="form-box">
+  <label>Name</label>
+  <input type="text" placeholder="Value">
+
+  <label>Surname</label>
+  <input type="text" placeholder="Value">
+
+  <label>Email</label>
+  <input type="email" placeholder="Value">
+
+  <label>Message</label>
+  <textarea placeholder="Value"></textarea>
+
+  <button type="submit">Submit</button>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <span class="footer-title">CRAFTED EATS</span>
+  <img src="fruits.png" alt="Fruits" class="footer-image">
+  <div class="blue-rectangle">
+    <div class="title">Quick Links</div>
+    <div class="link">Homepage</div>
+    <div class="link">About Me</div>
+    <div class="link">Eats</div>
+    <div class="link">Contact</div>
+  </div>
+  <span class="footer-bottom-text">Made by Bernice Tang</span>
+</div>
+  
+  </div>
+  </body>
+ </html> 

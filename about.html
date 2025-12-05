@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en.CA">
+  <head>
+    <title>Crafted Kitchen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet"> 
+<style>
+  html {
+    width: 1440px;
+  }
+  
+  body {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: white;
+  font-family: Crimson Text; 
+}
+
+/* Container, Margin */
+.container {
+  width: 100%;
+  margin: 0 auto;          
+  padding: 0 20px;         
+}
+
+.nav-wrapper {
+display: flex;
+align-items: center;
+padding: 10px 0;
+}
+
+
+/* space for star logo */
+.logo-space {
+width: 150px;
+height: auto;
+margin-right: 20px;
+}
+
+
+/* Nav Bar */
+.navbar {
+background-color: #FFF1B5;
+padding: 14px 0;
+border-radius: 30px;
+flex-grow: 1;
+}
+
+
+/* evenly spaced links */
+.navbar ul {
+list-style: none;
+margin: 0;
+padding: 0 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+.navbar li a {
+text-decoration: none;
+color: black;
+font-size: 17px;
+}
+
+
+.navbar li a:hover {
+opacity: 0.7;
+}
+
+/* Who am I section */ 
+.yellow-rectangle {
+  width: 1200px;
+  height: 500px;
+  background-color: #FFF1B5;
+  position: relative;
+  margin-top: 50px;          
+}
+
+.brown-rectangle {
+  width: 600;
+  height: 400;
+  background-color: #43302E;
+  border-radius: 20px;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selfie img {
+  max-height: 350px;
+  height: auto;
+  width: auto;
+  border-radius: 20px;
+  position: static;
+}
+  
+.whoami {
+  position: absolute;
+  right: 50px;
+  top: 60px;
+  width: 450px;
+  color: black; 
+}
+
+.whoami h1 {
+  font-size: 60px;
+  font-family: "bagel fat one";
+  margin-bottom: 0px;
+  text-align: center;
+  margin-top: -30px;
+}
+  
+.whoami p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: Crimson Text;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* brown repetitive rectangle */
+.repetitive-text-rectangle {
+    width: 100%;
+    max-width: 1200px;
+    height: 110px;              
+    background-color: white;
+    margin: 100px auto;      
+    border: 3px solid #43302E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;               
+    box-sizing: border-box;  
+  }
+
+  .text-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .text-group img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .text-group span {
+    font-size: 24px;
+    font-family: Crimson Text;
+    color: #43302E;
+  }
+
+/* My story section */
+.blue-rectangle {
+    width: 100%;
+    max-width: 1200px;
+    height: 750px;         
+    background-color: #C1DBE8;
+    margin: 110px auto 0;
+    position: relative;
+}
+  
+.beige-rectangle {
+    width: 600px;
+    height: 400px;
+    background-color: #F3EBD8;
+    border-radius: 20px;
+    position: absolute;
+    top: 175px;      
+    right: 50px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beige-rectangle img {
+    max-height: 350px;
+    width: auto;
+    border-radius: 20px;
+}
+
+.story-text {
+    position: absolute;
+    left: 50px;
+    top: 100px;  
+    width: 450px;
+    color: black;
+    text-align: center;
+}
+
+.story-text h1 {
+    font-size: 60px;
+    font-family: "Bagel Fat One";
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: Crimson Text;
+}
+  
+/* Footer Section */
+.footer {
+  width: 100%;
+  max-width: 1200px;    
+  height: 500px;        
+  background-color: #FFF1B5;
+  margin: 0 auto;
+  position: relative; 
+}
+
+.footer-title {
+  position: absolute;
+  top: 50px;              
+  left: 75px;                 
+  font-size: 60px;
+  font-family: 'Croissant One'; 
+  font-weight: bold;
+  color: #43302E;     
+}
+
+.footer-image {
+  position: absolute;       
+  top: 150px;               
+  left: 75px;                  
+  width: auto;              
+  height: 250px;           
+}
+
+.footer .blue-rectangle {
+  position: absolute;
+  top: -25px;           
+  left: 750px;         
+  width: 350px;
+  height: 355px;
+  background-color: #C1DBE8;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer .blue-rectangle .title {
+  font-family: "Croissant One";
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer .blue-rectangle .link {
+  font-family: "Croissant One";
+  font-size: 32px;
+  margin: 5px 0;
+}
+
+.footer-bottom-text {
+  position: absolute;
+  bottom: 25px;
+  left: 75px;
+  font-size: 16px;
+  font-family: "Croissant One";
+  color: black;
+}
+  
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="nav-wrapper">
+<img class="logo-space" src="StarLogo.png" alt="Logo">
+
+
+<nav class="navbar">
+<ul>
+<li><a href="homepage.html">Home</a></li>
+<li><a href="about.html">About me</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>  
+  
+<div class="yellow-rectangle">
+  <div class="brown-rectangle">
+    <div class="selfie">
+      <img src="selfie.jpeg" alt="selfie">
+    </div>
+   </div>
+  <div class="whoami">
+        <h1>Who am I?</h1>
+        <p>
+          Welcome to my site! My name is Bernice and I’m someone who loves creating things 
+          that feel cozy, intentional, and a little bit fun. Outside of the kitchen, I’m 
+          always experimenting — whether that’s trying new hobbies, making things look 
+          aesthetic, or just learning whatever catches my brain that week.<br><br>
+          This space is basically my little corner of the internet where I get to share 
+          what I’ve made, how I’ve grown, and the things that inspire me. 
+          Hope you enjoy exploring around.
+        </p>
+      </div>
+
+<!-- brown rectangle -->
+  <div class="repetitive-text-rectangle">
+    <div class="text-group">
+      <img src="brown-flower.png">
+      <span>UX Student</span>
+    </div>
+
+    <div class="text-group">
+      <img src="brown-flower.png">
+      <span>Explore Recipes</span>
+    </div>
+
+    <div class="text-group">
+      <img src="brown-flower.png">
+      <span>UX Student</span>
+    </div>
+
+    <div class="text-group">
+      <img src="brown-flower.png">
+      <span>Explore Recipes</span>
+    </div>
+
+    <div class="text-group">
+      <img src="brown-flower.png">
+      <span>UX Student</span>
+    </div>
+  </div>
+</div>
+  
+<!-- my story section -->
+<div class="blue-rectangle">
+
+  <div class="story-text">
+    <h1>My Story</h1>
+    <p>
+      My story in the kitchen started when I was six, standing on a little stool so I could actually reach the counter. I learned most of what I know by watching the people around me — my mom, my nanny, my grandmas, and honestly any elder who was down to let me hover over their shoulder while they cooked.
+    </p>
+    <p>
+      They taught me the basics, the tricks, the little unspoken things that never show up in recipes. And as I got older, I started branching out on my own — trying new cuisines, experimenting with flavors, and figuring out what kind of food feels like ‘me.’
+    </p>
+    <p>
+      Cooking has always been this mix of family, curiosity, and creativity for me, and it’s something I’ve carried with me ever since.
+    </p>
+  </div>
+
+  <div class="beige-rectangle">
+    <img src="baby.jpeg" alt="Beige Image">
+  </div>
+
+</div> 
+  
+<!-- Footer -->
+<div class="footer">
+  <span class="footer-title">CRAFTED EATS</span>
+  <img src="fruits.png" alt="Fruits" class="footer-image">
+  <div class="blue-rectangle">
+    <div class="title">Quick Links</div>
+    <div class="link">Homepage</div>
+    <div class="link">About Me</div>
+    <div class="link">Eats</div>
+    <div class="link">Contact</div>
+  </div>
+  <span class="footer-bottom-text">Made by Bernice Tang</span>
+</div>
+
+</div>
+</body>
+</html>

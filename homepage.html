@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en.ca">
+  <head>
+    <title>Crafted Kitchen</title>
+<style>
+
+  html {
+    width: 1440px;
+  }
+  
+  body {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #C1DBE8;
+  font-family: Crimson Text; 
+}
+
+/* Container, Margin */
+.container {
+  width: 100%;
+  margin: 0 auto;          
+  padding: 0 20px;         
+}
+
+.nav-wrapper {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+/* space for star logo */
+.logo-space {
+      width: 150px;   
+      height: auto;
+      margin-right: 20px;
+    }
+
+/* Nav Bar */
+.navbar {
+      background-color: #FFF1B5;
+      padding: 14px 0;
+      border-radius: 30px; 
+      flex-grow: 1;
+    }
+
+/* evenly spaced links */
+.navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+.navbar li a {
+      text-decoration: none;
+      color: black;
+      font-size: 17px;
+    }
+
+.navbar li a:hover {
+      opacity: 0.7;
+    }
+
+/* Title + Description */
+.website-title {
+  color: #587095; 
+  text-align: center;
+  margin-top: 20px;
+  padding: 0 40px;
+}
+
+.website-title h1 {
+  font-size: 90px;
+  font-family: Croissant One; 
+  margin-bottom: 10px;
+}
+
+.title-description  {
+    color: #587095;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title-description p {
+    font-size: 20px;
+    margin: 5px 0; 
+}
+
+/* View my work button */
+.viewmyworkbtn {
+  background-color: #E8E2D4;
+  color: black;
+  font-size: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+  
+.viewmyworkbtn:hover {
+  background-color: #CFC7B3;
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Beige retangle */
+.beige-rectangle {
+  width: 1200px;
+  height: 500px;
+  background-color: #F3EBD8;
+  margin: 180px auto 0; 
+  display: flex;
+  align-items: center;          
+  justify-content: center;
+  gap: 40px;
+}
+
+.beige-left {
+  display: flex;
+  flex-direction: column; 
+  max-width: 500px;       
+}
+
+/* Homepage descripton in beige rectangle */
+.homepage-description {
+  color: black;
+  max-width: 600px;   
+  text-align: center;
+  line-height: 1.5;
+  
+}
+
+.homepage-description p {
+  font-size: 30px;
+  font-family: Crimson Text;
+  margin: 5px 0;
+}
+
+/* About Me button */
+.aboutme-btn {
+  margin-top: 20px; 
+  background-color: #FFF1B5;
+  color: black;
+  font-size: 18px;
+  font-family: Crimson Text; 
+  padding: 12px 75px;
+  border: 3px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.aboutme-btn:hover {
+  opacity: 0.7;
+}
+
+/*  Homepage Salad Image */
+.beige-right img {
+  max-height: 400px;    
+  height: auto;
+  width: auto;
+  margin-left: 20px;
+}
+
+.repetitive-text-rectangle {
+   width: 100%;
+   max-width: 1200px;
+   height: 110px;              
+   background-color: white;
+   margin: 0 auto;      
+   border: 3px solid #E1C1C6;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 40px;               
+   box-sizing: border-box;  
+}
+
+.text-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-group img {
+    width: 22px;
+    height: 22px;
+}
+
+.text-group span {
+    font-size: 24px;
+    font-family: Crimson Text;
+    color: #E1C1C6;
+}
+  
+.footer {
+    width: 100%;
+    max-width: 1200px;    
+    height: 500px;        
+    background-color: #FFF1B5;
+    margin: 0 auto;
+    position: relative; 
+}
+  
+  .footer-title {
+    position: absolute;
+    top: 50px;              
+    left: 75;                 
+    font-size: 60px;
+    font-family: 'Croissant One'; 
+    font-weight: bold;
+    color: #43302E;     
+}
+  
+.footer-image {
+    position: absolute;       
+    top: 150px;               
+    left: 75;                  
+    width: auto;              
+    height: 250px;           
+}
+  
+.blue-rectangle {
+    position: absolute;
+    top: 72.5px;           
+    left: 750;         
+    width: 350px;
+    height: 355px;
+    background-color: #C1DBE8;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+  
+.blue-rectangle .title {
+    font-family: "Croissant One";
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.blue-rectangle .link {
+    font-family: "Croissant One";
+    font-size: 32px;
+    margin: 5px 0;
+}
+  
+.footer-bottom-text {
+    position: absolute;
+    bottom: 25px;
+    left: 75px;
+    font-size: 16px;
+    font-family: "Croissant One";
+    color: black;
+  }
+    
+  </style>
+</head>
+
+<body>
+
+<!-- Container, Margin -->
+  <div class="container">
+
+<!-- Star Doodle Logo -->
+<div class="nav-wrapper">
+    <img class="logo-space" src="StarLogo.png" alt="Logo">
+
+<!-- NAVIGATION BAR -->  
+<nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+<!-- WEBSITE TITLE -->
+<div class="website-title">
+    <h1>CRAFTED EATS</h1>
+</div>
+
+<div class="title-description">
+  <p>Cooking Showcase by Yours Truly</p>
+  <p>Bernice Tang</p>
+    </div>
+
+<!-- View my work button -->
+<div class="button-wrapper">
+      <button class="viewmyworkbtn">View my work Button</button>
+    </div>
+
+<!-- Hero image div, find an image, edit it on adobe, use stock photo -->
+<!-- Beige rectangle + homepage description + About me button -->
+<div class="beige-rectangle">
+<div class="beige-left">
+<div class="homepage-description">
+  <p>Welcome to my little corner of </p> 
+  <p>the kitchen! This site is where</p>
+  <p>I share the dishes that shaped</p>
+  <p>my cooking journey — the</p> 
+  <p>meals I’ve learned, loved, and</p>
+  <p>crafted over the years.</p>
+
+<!-- About me button -->
+</div>
+<button class="aboutme-btn">About Me</button>
+</div>
+
+<!-- Homepage salad image -->
+<div class="beige-right">
+    <img src="Homepage-Salad-Image.png" alt="Salad Image">    
+</div>
+</div> 
+
+<!-- White rectangle -->
+<div class="repetitive-text-rectangle">
+  <div class="text-group">
+      <img src="flower-logo.png">
+      <span>Certified Foodie</span>
+  </div>
+
+  <div class="text-group">
+      <img src="flower-logo.png">
+      <span>Good Eats</span>
+  </div>
+
+  <div class="text-group">
+      <img src="flower-logo.png">
+      <span>Certified Foodie</span>
+  </div>
+
+  <div class="text-group">
+      <img src="flower-logo.png">
+      <span>Good Eats</span>
+  </div>
+
+  <div class="text-group">
+      <img src="flower-logo.png">
+      <span>Certified Foodie</span>
+  </div>
+</div>
+    
+<!-- Footer -->
+<div class="footer">
+  <span class="footer-title">CRAFTED EATS</span>
+  <img src="fruits.png" alt="Fruits" class="footer-image">
+  <div class="blue-rectangle">
+    <div class="title">Quick Links</div>
+    <div class="link">Homepage</div>
+    <div class="link">About Me</div>
+    <div class="link">Eats</div>
+    <div class="link">Contact</div>
+  </div>
+    <span class="footer-bottom-text">Made by Bernice Tang</span>
+</div>
+
+
+    </div>
+  </body>
+</html>
+
