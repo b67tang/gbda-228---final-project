@@ -99,7 +99,7 @@ opacity: 0.7;
   width: 100%;
   height: 1900px;
   background-color: #F3EBD8;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
   display: flex;           
   justify-content: center;
   align-items: center;
@@ -153,31 +153,82 @@ opacity: 0.7;
     background-color: #43302E;
     margin-top: 20px;
     border-radius: 50px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
-.names {
-  position: absolute;
-  bottom: 10px;    
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 20px;        
-  font-size: 18px;
+.inner.bottom .name {
+    color: white;
+    font-size: 20px;
+    font-family: "Crimson Text";
+    text-align: center;
+    margin: 0;
 }
 
-/* assign different images for bottom rectangles */
-.card:nth-child(1)  .inner.top { background-image: url("salmonpokebowl.jpeg"); }
-.card:nth-child(2)  .inner.top { background-image: url("beefpepperlunch.jpeg"); }
-.card:nth-child(3)  .inner.top { background-image: url("caesarchickensalad.jpeg"); }
-.card:nth-child(4)  .inner.top { background-image: url("eggwithtomato.jpeg"); }
-.card:nth-child(5)  .inner.top { background-image: url("mushroomparmesanpasta.jpeg"); }
-.card:nth-child(6)  .inner.top { background-image: url("napabeefandveggieswrap.jpeg"); }
-.card:nth-child(7)  .inner.top { background-image: url("momodumplings.jpeg"); }
-.card:nth-child(8)  .inner.top { background-image: url("tacos.jpeg"); }
-.card:nth-child(9)  .inner.top { background-image: url("lemongarlictrout.jpeg"); }
-.card:nth-child(10) .inner.top { background-image: url("avocadoparmesanpasta.jpeg"); }
-.card:nth-child(11) .inner.top { background-image: url("cherrytomatopasta.jpeg"); }
-.card:nth-child(12) .inner.top { background-image: url("trianglecheesepizza.jpeg"); }
+/* Footer Section */
+.footer {
+    width: 100%;
+    max-width: 1200px;    
+    height: 500px;        
+    background-color: #FFF1B5;
+    margin: 0 auto;
+    position: relative; 
+}
+
+.footer-title {
+    position: absolute;
+    top: 50px;              
+    left: 75px;                 
+    font-size: 60px;
+    font-family: 'Croissant One'; 
+    font-weight: bold;
+    color: #43302E;     
+}
+
+.footer-image {
+    position: absolute;       
+    top: 150px;               
+    left: 75px;                  
+    width: auto;              
+    height: 250px;           
+}
+
+.footer .blue-rectangle {
+    position: absolute;
+    top: 75px;           
+    left: 750px;         
+    width: 350px;
+    height: 355px;
+    background-color: #C1DBE8;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer .blue-rectangle .title {
+    font-family: "Croissant One";
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer .blue-rectangle .link {
+    font-family: "Croissant One";
+    font-size: 32px;
+    margin: 5px 0;
+}
+
+.footer-bottom-text {
+    position: absolute;
+    bottom: 25px;
+    left: 75px;
+    font-size: 16px;
+    font-family: "Croissant One";
+    color: black;
+}
 </style>
     
 <body>
@@ -310,11 +361,21 @@ experiments, favorites, and everything in between.
         <p class="name">Triangle Cheese Pizza</p>
       </div>
     </div>
-
-
   </div>
 </div>
-  
+  <!-- Footer -->
+<div class="footer">
+  <span class="footer-title">CRAFTED EATS</span>
+  <img src="fruits.png" alt="Fruits" class="footer-image">
+  <div class="blue-rectangle">
+    <div class="title">Quick Links</div>
+    <div class="link">Homepage</div>
+    <div class="link">About Me</div>
+    <div class="link">Eats</div>
+    <div class="link">Contact</div>
+  </div>
+  <span class="footer-bottom-text">Made by Bernice Tang</span>
+</div>
   
       </div>
     </body>
