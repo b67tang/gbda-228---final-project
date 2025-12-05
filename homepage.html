@@ -108,23 +108,25 @@
   text-align: center;
   margin-top: 20px;
 }
-
+  
 /* Beige retangle */
 .beige-rectangle {
   width: 1200px;
   height: 500px;
   background-color: #F3EBD8;
-  margin: 180px auto 0; 
+  margin: 100px auto 0; 
   display: flex;
   align-items: center;          
   justify-content: center;
   gap: 40px;
+  border-radius: 20px 20px 0 0;
 }
 
-.beige-left {
+.beige-left a{
   display: flex;
   flex-direction: column; 
-  max-width: 500px;       
+  max-width: 500px;
+  text-decoration: none;
 }
 
 /* Homepage descripton in beige rectangle */
@@ -147,7 +149,7 @@
   margin-top: 20px; 
   background-color: #FFF1B5;
   color: black;
-  font-size: 18px;
+  font-size: 25px;
   font-family: Crimson Text; 
   padding: 12px 75px;
   border: 3px solid white;
@@ -292,7 +294,7 @@
       </ul>
     </nav>
   </div>
-    
+
 <!-- WEBSITE TITLE -->
 <div class="website-title">
     <h1>CRAFTED EATS</h1>
@@ -309,8 +311,6 @@
       <button class="viewmyworkbtn">View my work</button>
     </a>
   </div>
-
-<!-- Hero image div, find an image, edit it on adobe, use stock photo -->
 <!-- Beige rectangle + homepage description + About me button -->
 <div class="beige-rectangle">
 <div class="beige-left">
@@ -321,11 +321,13 @@
   <p>my cooking journey — the</p> 
   <p>meals I’ve learned, loved, and</p>
   <p>crafted over the years.</p>
-
+  </div>
+  
 <!-- About me button -->
-</div>
-<button class="aboutme-btn">About Me</button>
-</div>
+  <a href="about.html">
+  <button class="aboutme-btn">About Me</button>
+  </a>
+  </div>
 
 <!-- Homepage salad image -->
 <div class="beige-right">
