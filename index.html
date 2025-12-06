@@ -208,11 +208,17 @@
     height: 500px; 
     background-color: #FFF1B5; 
     margin: 0 auto; 
-    position: relative;                 
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 50px 75px;
+    box-sizing: border-box;
   }
   
 .footer-title {
-    position: absolute; 
+    position: static; 
+    margin-bottom: 20px;
     top: 50px; 
     left: 75px; 
     font-size: 60px; 
@@ -230,7 +236,8 @@
 }
   
 .blue-rectangle {
-    position: absolute; 
+    position: static;
+    align-self: flex-end;
     top: 72.5px; 
     left: 750px; 
     width: 350px; 
@@ -366,16 +373,19 @@
     
 <!-- Footer -->
 <div class="footer">
-  <span class="footer-title">CRAFTED EATS</span>
-  <img src="fruits.png" alt="Fruits" class="footer-image">
+  <div class="footer-left">
+    <span class="footer-title">CRAFTED EATS</span>
+    <img src="fruits.png" alt="Fruits" class="footer-image">
+    <span class="footer-bottom-text">Made by Bernice Tang</span>
+  </div>
+
   <div class="blue-rectangle">
     <div class="title">Quick Links</div>
-  <a href="index.html" class="link">Homepage</a>
-  <a href="about.html" class="link">About Me</a>
-  <a href="gallery.html" class="link">Eats</a>
-  <a href="contact.html" class="link">Contact</a>
+    <a href="index.html" class="link">Homepage</a>
+    <a href="about.html" class="link">About Me</a>
+    <a href="gallery.html" class="link">Eats</a>
+    <a href="contact.html" class="link">Contact</a>
   </div>
-    <span class="footer-bottom-text">Made by Bernice Tang</span>
 </div>
 
 
